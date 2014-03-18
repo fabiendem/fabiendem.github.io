@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://fabiendem.github.io/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-18T14:24:32+00:00</updated>
+  <updated>2014-03-18T14:26:18+00:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,92 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cool online Markdown editor: StackEdit]]></title>
+    <link href="http://fabiendem.github.io/blog/2014/03/18/cool-online-markdown-editor-stackedit/"/>
+    <updated>2014-03-18T12:02:35+00:00</updated>
+    <id>http://fabiendem.github.io/blog/2014/03/18/cool-online-markdown-editor-stackedit</id>
+    <content type="html"><![CDATA[<p>Jekyll and so Octopress allow to write your content in Markdown, cool stuff!</p>
+
+<p>But for this you need a <strong>good Markdown editor</strong>.
+And here comes <a href="https://stackedit.io/">StackEdit</a>:</p>
+
+<ul>
+<li>Open-source (<a href="https://github.com/benweet/stackedit">hosted on GitHub</a>)</li>
+<li>Free</li>
+<li>Online</li>
+<li>Live preview</li>
+<li>Backup on Dropbox, Drive</li>
+<li>Publication features</li>
+</ul>
+
+
+<p>Have a look!</p>
+
+<blockquote><p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Get the Git working branch in Gradle]]></title>
+    <link href="http://fabiendem.github.io/blog/2014/03/17/get-the-git-working-branch-in-gradle/"/>
+    <updated>2014-03-17T15:49:45+00:00</updated>
+    <id>http://fabiendem.github.io/blog/2014/03/17/get-the-git-working-branch-in-gradle</id>
+    <content type="html"><![CDATA[<p>Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='groovy'><span class='line'><span class="n">buildTypes</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">debug</span> <span class="o">{</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>        <span class="n">versionNameSuffix</span> <span class="s2">&quot;-branch_&quot;</span> <span class="o">+</span> <span class="n">getWorkingBranch</span><span class="o">()</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The getWorkingBranch is a function defined as below in your build.gradle file:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='groovy'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * Get the name of the working branch of the project</span>
+</span><span class='line'><span class="cm"> *</span>
+</span><span class='line'><span class="cm"> * @return Name of the working branch</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kt">def</span> <span class="nf">getWorkingBranch</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kt">def</span> <span class="n">workingBranch</span> <span class="o">=</span> <span class="s2">&quot;git --git-dir=${rootDir}/.git --work-tree=${rootDir} rev-parse --abbrev-ref HEAD&quot;</span><span class="o">.</span><span class="na">execute</span><span class="o">().</span><span class="na">text</span><span class="o">.</span><span class="na">trim</span><span class="o">()</span>
+</span><span class='line'>    <span class="n">print</span> <span class="s2">&quot;Working branch: &quot;</span> <span class="o">+</span> <span class="n">workingBranch</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">workingBranch</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Source:</strong> Figured it out from the <a href="https://plus.google.com/+JakeWharton/posts/6f5TcVPRZij">Jake Wahrton Google+ post</a> and the comments.</p>
+
+<p>It actually executes the following git command to get the current branch: <code>git rev-parse --abbrev-ref HEAD</code></p>
+
+<p><code>--git-dir=${rootDir}/.git --work-tree=${rootDir}</code> is used to tell git on which local repo the command should be executed, as the gradle function (and so the git command) won&rsquo;t be executed from the root of you Android project. You just need to show its way to git&hellip;</p>
+
+<p>If your module executing the getWorkingBranch task is 2 levels down within your project, simply update the <code>--git-dir=${rootDir}/.git --work-tree=${rootDir}</code> parameters to <code>--git-dir=${rootDir}/../../.git --work-tree=${rootDir}/../..</code> (see the <code>../..</code>)</p>
+]]></content>
+  </entry>
   
 </feed>
