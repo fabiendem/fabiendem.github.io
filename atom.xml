@@ -4,7 +4,7 @@
   <title><![CDATA[Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-18T14:54:10+00:00</updated>
+  <updated>2014-03-18T15:48:33+00:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -77,13 +77,19 @@ And here comes <a href="https://stackedit.io/">StackEdit</a>:</p>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
 </pre></td><td class='code'><pre><code class='groovy'><span class='line'><span class="cm">/**</span>
 </span><span class='line'><span class="cm"> * Get the name of the working branch of the project</span>
 </span><span class='line'><span class="cm"> *</span>
 </span><span class='line'><span class="cm"> * @return Name of the working branch</span>
 </span><span class='line'><span class="cm"> */</span>
 </span><span class='line'><span class="kt">def</span> <span class="nf">getWorkingBranch</span><span class="o">()</span> <span class="o">{</span>
-</span><span class='line'>    <span class="kt">def</span> <span class="n">workingBranch</span> <span class="o">=</span> <span class="s2">&quot;git --git-dir=${rootDir}/.git --work-tree=${rootDir} rev-parse --abbrev-ref HEAD&quot;</span><span class="o">.</span><span class="na">execute</span><span class="o">().</span><span class="na">text</span><span class="o">.</span><span class="na">trim</span><span class="o">()</span>
+</span><span class='line'>    <span class="c1">// Triple double-quotes for the breaklines</span>
+</span><span class='line'>    <span class="kt">def</span> <span class="n">workingBranch</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;git --git-dir=${rootDir}/../.git</span>
+</span><span class='line'><span class="s2">                               --work-tree=${rootDir}/..</span>
+</span><span class='line'><span class="s2">                               rev-parse --abbrev-ref HEAD&quot;&quot;&quot;</span><span class="o">.</span><span class="na">execute</span><span class="o">().</span><span class="na">text</span><span class="o">.</span><span class="na">trim</span><span class="o">()</span>
 </span><span class='line'>    <span class="n">print</span> <span class="s2">&quot;Working branch: &quot;</span> <span class="o">+</span> <span class="n">workingBranch</span>
 </span><span class='line'>    <span class="k">return</span> <span class="n">workingBranch</span>
 </span><span class='line'><span class="o">}</span>
@@ -96,7 +102,8 @@ And here comes <a href="https://stackedit.io/">StackEdit</a>:</p>
 
 <p><code>--git-dir=${rootDir}/.git --work-tree=${rootDir}</code> is used to tell git on which local repo the command should be executed, as the gradle function (and so the git command) won&rsquo;t be executed from the root of you Android project. You just need to show its way to git&hellip;</p>
 
-<p>If your module executing the getWorkingBranch task is 2 levels down within your project, simply update the <code>--git-dir=${rootDir}/.git --work-tree=${rootDir}</code> parameters to <code>--git-dir=${rootDir}/../../.git --work-tree=${rootDir}/../..</code> (see the <code>../..</code>)</p>
+<p>If your module executing the getWorkingBranch task is 2 levels down within your project, simply update the <code>--git-dir=${rootDir}/.git --work-tree=${rootDir}</code> parameters to <br/>
+<code>--git-dir=${rootDir}/../../.git --work-tree=${rootDir}/../..</code> (see the <code>../..</code>)</p>
 ]]></content>
   </entry>
   
