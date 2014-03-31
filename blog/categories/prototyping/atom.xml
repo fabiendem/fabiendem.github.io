@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Prototyping | Wanted: A cool title]]></title>
+  <link href="http://fabiendem.github.io/blog/categories/prototyping/atom.xml" rel="self"/>
+  <link href="http://fabiendem.github.io/"/>
+  <updated>2014-03-31T14:37:14+01:00</updated>
+  <id>http://fabiendem.github.io/</id>
+  <author>
+    <name><![CDATA[Fabien Demangeat]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pencil: a Free and Open-source Android prototyping tool]]></title>
+    <link href="http://fabiendem.github.io/blog/2014/03/31/pencil-a-free-and-opensource-android-prototyping-tool/"/>
+    <updated>2014-03-31T14:14:39+01:00</updated>
+    <id>http://fabiendem.github.io/blog/2014/03/31/pencil-a-free-and-opensource-android-prototyping-tool</id>
+    <content type="html"><![CDATA[<p>When it comes to User interface prototyping, you will find loads of solutions, some of them web based with limited features, others non-free, etc.
+None of which I was happy when short on money, or say for an occasional project.</p>
+
+<p>But I have finally found a quite good solution, <a href="http://pencil.evolus.vn/">Pencil</a> free, open-source with all the features I was expecting:</p>
+
+<ul>
+<li>Templates, so you don&rsquo;t repeat yourself</li>
+<li>Built-in Native UI elements</li>
+<li>Image import</li>
+<li>Export to PNG and PDF</li>
+</ul>
+
+
+<p>If you are an iOS guy, the common iOS elements are also directly embedded in the app.</p>
+
+<p>Note that if you run on Mac OS Mavericks, you will need the version <a href="https://evoluspencil.googlecode.com/files/Pencil-2.0.6-mac.tar.bz2">2.0.6</a> (in beta at the time I am writing this).</p>
+
+<p>That&rsquo;s it, give it try and enjoy.</p>
+
+<p><a href="http://pencil.evolus.vn/"><img src="http://pencil.evolus.vn/styling/images/logo-shadow.png" title="Logo Pencil" alt="Pencil logo" /> Pencil project</a></p>
+]]></content>
+  </entry>
+  
+</feed>

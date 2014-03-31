@@ -13,8 +13,14 @@
         <lastmod>2014-03-27T16:00:34+00:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://fabiendem.github.io/blog/2014/03/31/pencil-a-free-and-opensource-android-prototyping-tool/
+        </loc>
+        <lastmod>2014-03-31T14:36:16+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://fabiendem.github.io/blog/archives/</loc>
-        <lastmod>2014-03-27T16:00:34+00:00</lastmod>
+        <lastmod>2014-03-31T14:36:16+01:00</lastmod>
     </url>
     <url>
         <loc>http://fabiendem.github.io/blog/categories/</loc>
@@ -22,7 +28,7 @@
     </url>
     <url>
         <loc>http://fabiendem.github.io/</loc>
-        <lastmod>2014-03-27T16:00:34+00:00</lastmod>
+        <lastmod>2014-03-31T14:36:16+01:00</lastmod>
     </url>
     <url>
         <loc>http://fabiendem.github.io/robots.txt</loc>
