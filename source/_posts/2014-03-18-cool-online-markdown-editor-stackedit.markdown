@@ -4,6 +4,7 @@ title: "Cool online Markdown editor: StackEdit"
 date: 2014-03-18 12:02:35 +0000
 comments: true
 categories: 
+- Markdown
 ---
 
 Jekyll and so Octopress allow to write your content in Markdown, cool stuff!
