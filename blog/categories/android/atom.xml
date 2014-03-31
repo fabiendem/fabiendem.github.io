@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-31T14:37:14+01:00</updated>
+  <updated>2014-03-31T15:37:33+01:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Android Gradle build examples]]></title>
+    <link href="http://fabiendem.github.io/blog/2014/03/31/android-gradle-build-examples/"/>
+    <updated>2014-03-31T15:18:10+01:00</updated>
+    <id>http://fabiendem.github.io/blog/2014/03/31/android-gradle-build-examples</id>
+    <content type="html"><![CDATA[<p>Diving into the new (new? well depends on you) Android Gradle build system may be a scary experience when you are used to the good old Eclipse ADT environment.<br/>
+But really, the Android Gradle system is worth it, it has SO MUCH to give you!</p>
+
+<h3>Samples exist</h3>
+
+<p>The documentation is not perfect yet and you may think that there is a lack of examples/samples on Ze Internet.<br/>
+So if you haven&rsquo;t found what you want on the the <a href="http://tools.android.com/tech-docs/new-build-system/user-guide">Android Gradle Plugin User guide</a>, maybe it worth having a look at the <strong>bottom</strong> of the <a href="http://tools.android.com/tech-docs/new-build-system">New build system page</a>, where some samples are available in Zip files.</p>
+
+<p>Another good resource is the Git repo of the build system, in the <strong>tests folder</strong> you will find plenty of <a href="https://android.googlesource.com/platform/tools/base/+/master/build-system/tests/">Android gradle build examples</a>, which are actually gathered in the archives available at the bottom of the <a href="http://tools.android.com/tech-docs/new-build-system">New build system page</a>, previously cited.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Pencil: a Free and Open-source Android prototyping tool]]></title>
