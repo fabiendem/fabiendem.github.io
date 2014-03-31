@@ -9,7 +9,7 @@
 	<meta name="author" content="Fabien Demangeat">
 
 	
-	<meta name="description" content="Mar 31st, 2014 Android, Gradle Comments Android Gradle Build Examples Diving into the new (new? well depends on you) Android Gradle build system may &hellip;">
+	<meta name="description" content="Mar 31st, 2014 Android Comments Multiple Android APK and Staged Rollout In some conditions, you may need to publish different APKs for your &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -97,6 +97,58 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-31T16:06:40+01:00" data-updated="true" itemprop="datePublished">Mar 31<span>st</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/android/'>Android</a>
+
+
+</div>
+		
+			<span class="comments"><a href="/blog/2014/03/31/multiple-android-apk-and-staged-rollout/#disqus_thread">Comments</a></span>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/03/31/multiple-android-apk-and-staged-rollout/" itemprop="url">Multiple Android APK and Staged Rollout</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>In some conditions, you may need to publish different APKs for your application that are each targeted to different device configuration. Even if it&rsquo;s not really recommended, it is possible thanks to the <a href="http://developer.android.com/google/play/publishing/multiple-apks.html">Multiple APK support</a>.</p>
+
+<p>Another cool feature from the Android distribution system is the staged-rollout, recently introduced by Google. The feature is <a href="https://support.google.com/googleplay/android-developer/answer/3131213">well described on the distribution support website</a> and <a href="http://developer.android.com/distribute/googleplay/about/distribution.html">also on the Android developer website</a>.<br/>
+Basically it allows to distribute your app to a percentage of users in order to gather possible critical bug reports and reviews before all your user based gets the update pushed on their device, you can slowly increase the percentage of users getting the update when you are more confident with your modifications.</p>
+
+<p>Despite of the detailed documentation, a question raised while working on a Android app didn&rsquo;t find its answer from the documention:</p>
+
+<blockquote><p>If you have 2 APKs, let&rsquo;s say one for 2 APIs level ranges (eg: API >=17 and &lt; 17). You want to publish an update for the users having a device running on Android API >= 17, and you select a stage rollout distribution for 20% of your user.<br/>
+On which users group will the percentage be based? All the users having your app (API &lt; 17 and API >= 17) or only the users who have a compatible device (API >= 17)?</p></blockquote>
+
+<p>We haven&rsquo;t found the answer in the documentation, but the Google Play developer support team came up with this answer which may help you:</p>
+
+<blockquote><p>If you select 20% for your staged rollout of the APK that is set for API 17+ then you should expect the 20% to be taken from users that have devices compatible with that API version, instead of all users eligible for the application.<br/>
+<cite>Google Play developer support</cite></p></blockquote>
+
+<p>Now the answer is clear!</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
