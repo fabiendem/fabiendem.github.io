@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-31T18:58:16+01:00</updated>
+  <updated>2014-04-01T10:36:10+01:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -23,10 +23,13 @@
 <p>Another cool feature from the Android distribution system is the staged-rollout, recently introduced by Google. The feature is <a href="https://support.google.com/googleplay/android-developer/answer/3131213">well described on the distribution support website</a> and <a href="http://developer.android.com/distribute/googleplay/about/distribution.html">also on the Android developer website</a>.<br/>
 Basically it allows to distribute your app to a percentage of users in order to gather possible critical bug reports and reviews before all your user based gets the update pushed on their device, you can slowly increase the percentage of users getting the update when you are more confident with your modifications.</p>
 
-<p>Despite of the detailed documentation, a question raised while working on a Android app didn&rsquo;t find its answer from the documention:</p>
+<p>Despite of the detailed documentation, a question raised while working on a Android app didn&rsquo;t find its answer from the documentation:</p>
 
 <blockquote><p>If you have 2 APKs, let&rsquo;s say one for 2 APIs level ranges (eg: API >=17 and &lt; 17). You want to publish an update for the users having a device running on Android API >= 17, and you select a stage rollout distribution for 20% of your user.<br/>
 On which users group will the percentage be based? All the users having your app (API &lt; 17 and API >= 17) or only the users who have a compatible device (API >= 17)?</p></blockquote>
+
+<!-- more -->
+
 
 <p>We haven&rsquo;t found the answer in the documentation, but the Google Play developer support team came up with this answer which may help you:</p>
 
@@ -45,6 +48,11 @@ On which users group will the percentage be based? All the users having your app
     <content type="html"><![CDATA[<p>Diving into the new (new? well depends on you) Android Gradle build system may be a scary experience when you are used to the good old Eclipse ADT environment.<br/>
 But really, the Android Gradle system is worth it, it has SO MUCH to give you!</p>
 
+<p>The problem is to find some examples to get started, as Android Gradle is still quite new.</p>
+
+<!-- more -->
+
+
 <h3>Samples exist</h3>
 
 <p>The documentation is not perfect yet and you may think that there is a lack of examples/samples on Ze Internet.<br/>
@@ -62,7 +70,12 @@ So if you haven&rsquo;t found what you want on the the <a href="http://tools.and
     <content type="html"><![CDATA[<p>When it comes to User interface prototyping, you will find loads of solutions, some of them web based with limited features, others non-free, etc.
 None of which I was happy when short on money, or say for an occasional project.</p>
 
-<p>But I have finally found a quite good solution, <a href="http://pencil.evolus.vn/">Pencil</a> free, open-source with all the features I was expecting:</p>
+<p>But I have finally found a quite good solution.</p>
+
+<!-- more -->
+
+
+<p>Here is <a href="http://pencil.evolus.vn/">Pencil</a>, free, open-source with all the features I was expecting:</p>
 
 <ul>
 <li>Templates, so you don&rsquo;t repeat yourself</li>
@@ -87,8 +100,12 @@ None of which I was happy when short on money, or say for an occasional project.
     <link href="http://fabiendem.github.io/blog/2014/03/17/get-the-git-working-branch-in-gradle/"/>
     <updated>2014-03-17T15:49:45+00:00</updated>
     <id>http://fabiendem.github.io/blog/2014/03/17/get-the-git-working-branch-in-gradle</id>
-    <content type="html"><![CDATA[<p>Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it:
-``` groovy
+    <content type="html"><![CDATA[<p>Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it.</p>
+
+<!-- more -->
+
+
+<p>``` groovy
 buildTypes {</p>
 
 <pre><code>debug {

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Markdown | Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-31T18:58:16+01:00</updated>
+  <updated>2014-04-01T10:36:10+01:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -18,10 +18,13 @@
     <link href="http://fabiendem.github.io/blog/2014/03/18/cool-online-markdown-editor-stackedit/"/>
     <updated>2014-03-18T12:02:35+00:00</updated>
     <id>http://fabiendem.github.io/blog/2014/03/18/cool-online-markdown-editor-stackedit</id>
-    <content type="html"><![CDATA[<p>Jekyll and so Octopress allow to write your content in Markdown, cool stuff!</p>
+    <content type="html"><![CDATA[<p>Jekyll and so Octopress allow to write your content in Markdown, cool stuff!
+But for this you need a <strong>good Markdown editor</strong>.</p>
 
-<p>But for this you need a <strong>good Markdown editor</strong>.
-And here comes <a href="https://stackedit.io/">StackEdit</a>:</p>
+<!-- more -->
+
+
+<p>And here comes <a href="https://stackedit.io/">StackEdit</a>:</p>
 
 <ul>
 <li>Open-source (<a href="https://github.com/benweet/stackedit">hosted on GitHub</a>)</li>

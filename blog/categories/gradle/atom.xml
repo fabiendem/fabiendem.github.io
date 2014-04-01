@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Gradle | Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/blog/categories/gradle/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-31T18:58:16+01:00</updated>
+  <updated>2014-04-01T10:36:10+01:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -21,6 +21,11 @@
     <content type="html"><![CDATA[<p>Diving into the new (new? well depends on you) Android Gradle build system may be a scary experience when you are used to the good old Eclipse ADT environment.<br/>
 But really, the Android Gradle system is worth it, it has SO MUCH to give you!</p>
 
+<p>The problem is to find some examples to get started, as Android Gradle is still quite new.</p>
+
+<!-- more -->
+
+
 <h3>Samples exist</h3>
 
 <p>The documentation is not perfect yet and you may think that there is a lack of examples/samples on Ze Internet.<br/>
@@ -35,8 +40,12 @@ So if you haven&rsquo;t found what you want on the the <a href="http://tools.and
     <link href="http://fabiendem.github.io/blog/2014/03/17/get-the-git-working-branch-in-gradle/"/>
     <updated>2014-03-17T15:49:45+00:00</updated>
     <id>http://fabiendem.github.io/blog/2014/03/17/get-the-git-working-branch-in-gradle</id>
-    <content type="html"><![CDATA[<p>Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it:
-``` groovy
+    <content type="html"><![CDATA[<p>Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it.</p>
+
+<!-- more -->
+
+
+<p>``` groovy
 buildTypes {</p>
 
 <pre><code>debug {

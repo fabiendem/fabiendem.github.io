@@ -4,7 +4,7 @@
   <title><![CDATA[Category: GUI | Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/blog/categories/gui/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-03-31T18:58:16+01:00</updated>
+  <updated>2014-04-01T10:36:10+01:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -21,7 +21,12 @@
     <content type="html"><![CDATA[<p>When it comes to User interface prototyping, you will find loads of solutions, some of them web based with limited features, others non-free, etc.
 None of which I was happy when short on money, or say for an occasional project.</p>
 
-<p>But I have finally found a quite good solution, <a href="http://pencil.evolus.vn/">Pencil</a> free, open-source with all the features I was expecting:</p>
+<p>But I have finally found a quite good solution.</p>
+
+<!-- more -->
+
+
+<p>Here is <a href="http://pencil.evolus.vn/">Pencil</a>, free, open-source with all the features I was expecting:</p>
 
 <ul>
 <li>Templates, so you don&rsquo;t repeat yourself</li>

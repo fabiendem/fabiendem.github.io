@@ -104,10 +104,13 @@
 <p>Another cool feature from the Android distribution system is the staged-rollout, recently introduced by Google. The feature is <a href="https://support.google.com/googleplay/android-developer/answer/3131213">well described on the distribution support website</a> and <a href="http://developer.android.com/distribute/googleplay/about/distribution.html">also on the Android developer website</a>.<br/>
 Basically it allows to distribute your app to a percentage of users in order to gather possible critical bug reports and reviews before all your user based gets the update pushed on their device, you can slowly increase the percentage of users getting the update when you are more confident with your modifications.</p>
 
-<p>Despite of the detailed documentation, a question raised while working on a Android app didn&rsquo;t find its answer from the documention:</p>
+<p>Despite of the detailed documentation, a question raised while working on a Android app didn&rsquo;t find its answer from the documentation:</p>
 
 <blockquote><p>If you have 2 APKs, let&rsquo;s say one for 2 APIs level ranges (eg: API >=17 and &lt; 17). You want to publish an update for the users having a device running on Android API >= 17, and you select a stage rollout distribution for 20% of your user.<br/>
 On which users group will the percentage be based? All the users having your app (API &lt; 17 and API >= 17) or only the users who have a compatible device (API >= 17)?</p></blockquote>
+
+<!-- more -->
+
 
 <p>We haven&rsquo;t found the answer in the documentation, but the Google Play developer support team came up with this answer which may help you:</p>
 
