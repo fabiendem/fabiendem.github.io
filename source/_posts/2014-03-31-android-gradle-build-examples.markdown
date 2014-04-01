@@ -11,6 +11,10 @@ categories:
 Diving into the new (new? well depends on you) Android Gradle build system may be a scary experience when you are used to the good old Eclipse ADT environment.  
 But really, the Android Gradle system is worth it, it has SO MUCH to give you!
 
+The problem is to find some examples to get started, as Android Gradle is still quite new.
+
+<!-- more -->
+
 ### Samples exist
 
 The documentation is not perfect yet and you may think that there is a lack of examples/samples on Ze Internet.  

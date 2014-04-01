@@ -12,7 +12,11 @@ categories:
 When it comes to User interface prototyping, you will find loads of solutions, some of them web based with limited features, others non-free, etc.
 None of which I was happy when short on money, or say for an occasional project.
 
-But I have finally found a quite good solution, [Pencil](http://pencil.evolus.vn/) free, open-source with all the features I was expecting:
+But I have finally found a quite good solution.
+
+<!-- more -->
+
+Here is [Pencil](http://pencil.evolus.vn/), free, open-source with all the features I was expecting:
 
 * Templates, so you don't repeat yourself
 * Built-in Native UI elements

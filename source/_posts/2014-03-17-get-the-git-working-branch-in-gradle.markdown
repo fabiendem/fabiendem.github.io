@@ -8,7 +8,10 @@ categories:
 - Gradle
 ---
 
-Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it:
+Getting the working branch name via Gradle can be useful if you want to add this information somewhere in your build, for example in the versionName of your debug Android build by suffixing it.
+
+<!-- more -->
+
 ``` groovy
 buildTypes {
     debug {

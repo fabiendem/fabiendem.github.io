@@ -8,8 +8,10 @@ categories:
 ---
 
 Jekyll and so Octopress allow to write your content in Markdown, cool stuff!
-
 But for this you need a **good Markdown editor**.
+
+<!-- more -->
+
 And here comes [StackEdit](https://stackedit.io/):
 
 * Open-source ([hosted on GitHub](https://github.com/benweet/stackedit))
