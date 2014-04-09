@@ -4,7 +4,7 @@
   <title><![CDATA[Wanted: A cool title]]></title>
   <link href="http://fabiendem.github.io/atom.xml" rel="self"/>
   <link href="http://fabiendem.github.io/"/>
-  <updated>2014-04-01T10:36:10+01:00</updated>
+  <updated>2014-04-09T10:56:22+01:00</updated>
   <id>http://fabiendem.github.io/</id>
   <author>
     <name><![CDATA[Fabien Demangeat]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Commit template for better commit messages]]></title>
+    <link href="http://fabiendem.github.io/blog/2014/04/08/commit-template-for-better-commit-messages/"/>
+    <updated>2014-04-08T17:34:29+01:00</updated>
+    <id>http://fabiendem.github.io/blog/2014/04/08/commit-template-for-better-commit-messages</id>
+    <content type="html"><![CDATA[<p>Writing good commit messages should be an everyday commitment, but it can be sometimes difficult to stay self-disciplined, expecially on your personal project or during rush hours. This behaviour is well represented by xkcd:</p>
+
+<p><img src="http://imgs.xkcd.com/comics/git_commit.png" title="Git Commit by xkcd" alt="Git commit by xkcd: http://xkcd.com/1296/" /></p>
+
+<p><em>Source: <a href="http://xkcd.com/1296/">http://xkcd.com/1296/</a></em></p>
+
+<p>A good solution is to create a default commit message, which will be used every time a commit is supposed to be done. Thanks to this message template you get used to the format and keep a good habit, and the configuration is pretty easy to do.</p>
+
+<!-- more -->
+
+
+<p>The configuration steps are well described on the <a href="http://git-scm.com/book/en/Customizing-Git-Git-Configuration">git-scm website, chapter 7.1 Customizing Git &ndash; Git Configuration, section <em>commit.template</em></a></p>
+
+<h2>Create a template</h2>
+
+<p>Create a file at <code>$HOME/.gitmessage.txt</code> if you want it global, or in your project&rsquo;s folder if you want it specific to your project.<br/>
+In this file, specify the template you would like to see everytime you commit.</p>
+
+<p>Example (Not saying it&rsquo;s the best one):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[theme] subjectline (keep it short)
+</span><span class='line'>
+</span><span class='line'>WhatHappened</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Some discussion about the message template and what a commit message should be can be found on the <a href="https://github.com/erlang/otp/wiki/Writing-good-commit-messages">Erlang/Otp wiki</a> or on the <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">tbaggery blog</a></p>
+
+<h2>Configure Git</h2>
+
+<p>Then configure Git to use you brand new template, using the commit.template parameter.</p>
+
+<p>If it&rsquo;s for all your project, run:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git config --global commit.template <span class="nv">$HOME</span>/.gitmessage.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If it specific to your Git based project directoy, assuming you have saved the template in this directory:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>project_directory/
+</span><span class='line'>git config --local commit.template .gitmessage.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Commit</h2>
+
+<p>And then commit as usual but <strong>without</strong> using the <code>-m</code> flag, so your default <code>$EDITOR</code> will show up with the text from the template prepopulated.</p>
+
+<p>If you keep replacing the values and filling the blanks of the template, you will quickly get use to the format. It&rsquo;s then a matter of time before you disable the template and keep going with your new good habit.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Multiple Android APK and staged rollout]]></title>

@@ -1,0 +1,253 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Commit template for better commit messages - Wanted: A cool title</title>
+	<meta name="author" content="Fabien Demangeat">
+
+	
+	<meta name="description" content="Commit Template for Better Commit Messages Writing good commit messages should be an everyday commitment, but it can be sometimes difficult to stay &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Wanted: A cool title" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://fabiendem.github.io/blog/2014/04/08/commit-template-for-better-commit-messages/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9878976-11']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/2a34a8762aaf0fe99a5770aa6c0b60c2?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+			<a class="google" href="https://plus.google.com/115238907641632262356" rel="author" title="Google+">Google+</a>
+		
+		
+		
+			<a class="github" href="https://github.com/fabiendem" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://stackoverflow.com/users/633788/fabien-demangeat" title="StackOverflow"></a>
+		
+		
+			<a class="linkedin" href="http://www.linkedin.com/in/fabiendemangeat" title="LinkedIn">LinkedIn</a>
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Commit Template for Better Commit Messages</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Writing good commit messages should be an everyday commitment, but it can be sometimes difficult to stay self-disciplined, expecially on your personal project or during rush hours. This behaviour is well represented by xkcd:</p>
+
+<p><img src="http://imgs.xkcd.com/comics/git_commit.png" title="Git Commit by xkcd" alt="Git commit by xkcd: http://xkcd.com/1296/" /></p>
+
+<p><em>Source: <a href="http://xkcd.com/1296/">http://xkcd.com/1296/</a></em></p>
+
+<p>A good solution is to create a default commit message, which will be used every time a commit is supposed to be done. Thanks to this message template you get used to the format and keep a good habit, and the configuration is pretty easy to do.</p>
+
+<!-- more -->
+
+
+<p>The configuration steps are well described on the <a href="http://git-scm.com/book/en/Customizing-Git-Git-Configuration">git-scm website, chapter 7.1 Customizing Git &ndash; Git Configuration, section <em>commit.template</em></a></p>
+
+<h2>Create a template</h2>
+
+<p>Create a file at <code>$HOME/.gitmessage.txt</code> if you want it global, or in your project&rsquo;s folder if you want it specific to your project.<br/>
+In this file, specify the template you would like to see everytime you commit.</p>
+
+<p>Example (Not saying it&rsquo;s the best one):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[theme] subjectline (keep it short)
+</span><span class='line'>
+</span><span class='line'>WhatHappened</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Some discussion about the message template and what a commit message should be can be found on the <a href="https://github.com/erlang/otp/wiki/Writing-good-commit-messages">Erlang/Otp wiki</a> or on the <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">tbaggery blog</a></p>
+
+<h2>Configure Git</h2>
+
+<p>Then configure Git to use you brand new template, using the commit.template parameter.</p>
+
+<p>If it&rsquo;s for all your project, run:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git config --global commit.template <span class="nv">$HOME</span>/.gitmessage.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If it specific to your Git based project directoy, assuming you have saved the template in this directory:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>project_directory/
+</span><span class='line'>git config --local commit.template .gitmessage.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Commit</h2>
+
+<p>And then commit as usual but <strong>without</strong> using the <code>-m</code> flag, so your default <code>$EDITOR</code> will show up with the text from the template prepopulated.</p>
+
+<p>If you keep replacing the values and filling the blanks of the template, you will quickly get use to the format. It&rsquo;s then a matter of time before you disable the template and keep going with your new good habit.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Fabien Demangeat
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+
+	
+
+<script type="text/javascript">
+      var disqus_shortname = 'fabiendem-github';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://fabiendem.github.io/blog/2014/04/08/commit-template-for-better-commit-messages/';
+        var disqus_url = 'http://fabiendem.github.io/blog/2014/04/08/commit-template-for-better-commit-messages/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

@@ -29,8 +29,14 @@
         <lastmod>2014-04-01T10:33:30+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://fabiendem.github.io/blog/2014/04/08/commit-template-for-better-commit-messages/
+        </loc>
+        <lastmod>2014-04-09T10:55:34+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://fabiendem.github.io/blog/archives/</loc>
-        <lastmod>2014-04-01T10:33:30+01:00</lastmod>
+        <lastmod>2014-04-09T10:55:34+01:00</lastmod>
     </url>
     <url>
         <loc>http://fabiendem.github.io/blog/categories/</loc>
@@ -38,7 +44,7 @@
     </url>
     <url>
         <loc>http://fabiendem.github.io/</loc>
-        <lastmod>2014-04-01T10:33:30+01:00</lastmod>
+        <lastmod>2014-04-09T10:55:34+01:00</lastmod>
     </url>
     <url>
         <loc>http://fabiendem.github.io/robots.txt</loc>
